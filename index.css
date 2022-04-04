@@ -1,0 +1,10 @@
+#navitem{
+    text-decoration: none;
+    padding: 30px;
+    text-decoration-color: rgb(206, 9, 9);
+    text-emphasis-style: color;
+    
+}
+.topnavigation{
+    background-color: rgb(12, 151, 164);
+}
