@@ -1,10 +1,28 @@
-#navitem{
-    text-decoration: none;
-    padding: 30px;
-    text-decoration-color: rgb(206, 9, 9);
-    text-emphasis-style: color;
+.navbar{
+    background-color: rgba(68, 77, 95, 0.863);
+} 
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar li
+{
+    float: right;
+    list-style: none;
+    padding: 3px ;
     
 }
-.topnavigation{
-    background-color: rgb(12, 151, 164);
+
+.navbar li a{
+        padding: 23px 23px;
+        text-decoration: none;
+        color: rgb(21, 20, 20);
+}
+
+.ClubName{
+    float: left;
+    color: rgb(208, 208, 220);
+    padding: 3px 3px;
+    font-size: medium;
 }
