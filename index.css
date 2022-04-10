@@ -1,5 +1,6 @@
 .navbar{
-    background-color: rgba(68, 77, 95, 0.863);
+    margin: -20px -20px 0px -20px;
+    background-color: rgba(244, 241, 248, 0.947);
 } 
 
 .navbar ul{
@@ -10,19 +11,27 @@
 {
     float: right;
     list-style: none;
-    padding: 3px ;
+    margin-right: 20px;
+    padding: 25px 0px 0px 20px ;
     
 }
 
 .navbar li a{
-        padding: 23px 23px;
-        text-decoration: none;
-        color: rgb(21, 20, 20);
+    padding: 23px 23px;
+    text-decoration: none;
+    color: rgb(167, 20, 20);
 }
 
 .ClubName{
     float: left;
-    color: rgb(208, 208, 220);
-    padding: 3px 3px;
-    font-size: medium;
+    color: rgb(12, 2, 54);
+    padding: 15px 15px;
+    font-size: 34px;
+}
+.Clublogo
+{
+    
+    float: left;
+    border-radius: 50%;
+    padding-top: 15px;
 }
