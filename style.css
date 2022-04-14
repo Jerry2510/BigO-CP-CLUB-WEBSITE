@@ -1,0 +1,81 @@
+:root {
+    --ab:  #039be5;
+    --ao:  #ffa100;
+    --pc:  #053349;
+    --bg:  #ECEFF1;
+    --bgb:  #f1f3f4;
+    --bgh:  #e8eaed;
+    --ptc:  #202124;
+    --stc:  #4e5257;
+    --ttc:  #bdc1c6;
+    --shadow_old:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+    --tbshadow:  0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
+    --trans:  width 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+head {
+    display: none;
+}
+
+meta {
+    display: none;
+}
+
+body {
+    min-height: 760px;
+    font-family: Prompt, sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    z-index: 10;
+    font-size: 15px;
+    background-color: var(--pc);
+}
+
+nav {
+    display: block;
+    overflow: hidden;
+}
+
+.navbar ul{
+    overflow: hidden;
+    /* vertical-align: middle; */
+}
+
+.navbar li
+{
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    padding: 15px 0px 0px 25px ;
+    
+}
+
+.navbar li a{
+    /* padding: 0px 0px 18px 0px; */
+    text-decoration: none;
+    color: var(--bgb);
+}
+
+.Clublogo img {
+    float: left;
+    left: 10px;
+    position: fixed;
+    justify-content: center;
+    vertical-align: middle;
+    top: -35px;
+}
