@@ -33,8 +33,48 @@ body {
     min-height: 760px;
     /* font-family: Prompt, sans-serif; */
     font-family: 'Montserrat', sans-serif;
+    /* overflow-x: hidden; */
     overflow: hidden;
 }
+/* start loading */
+/* div.loader-wrapper{
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+div.loader{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #000000;
+  border-top-color: #ffff ;
+  border-bottom-color: var(--ab);
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+}
+
+div.loader-wrapper div.loader-inner{
+  border-top-color: var(--ao);
+  border-bottom-color: var(--bg);
+  animation-duration: 2.5s;
+}
+
+@keyframes rotate{
+  0%{
+    transform: scale(1) rotate(360deg);
+  }
+  50%{
+    transform: scale(0.8) rotate(-360deg)
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+  }
+} */
+/* end loading */
+
 
 .navbar {
     position: fixed;
@@ -103,17 +143,17 @@ div.coreteam {
 
 div.coreteam div.image {
     opacity: 1;
-    margin-left: 30px;
+    margin-left: 40px;
     display: block;
     width: auto;
     height: 150px;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    border-radius: 4px;
+    /* border-radius: 4px;
     padding: 10px;
     box-sizing: border-box;
     box-shadow: var(--shadow);
-    background: transparent;
+    background: transparent; */
     color: var(--pc);
 }
 
@@ -378,7 +418,7 @@ div.info div.contact a{
 }
 
 div.info div.contact a:hover{
-  color: var(--ao);
+  color: var(--ab);
 }
 
 div.info div.contact span{
@@ -390,8 +430,37 @@ div.info div.social_media a:hover img:hover{
   opacity: 0.6;
   transform: scale(1.2);
 }
-/* ############### */
-
-/* ################# */
 
 /* end contact page */
+
+/* gallery page start */
+
+div.card{
+  width: 200px;
+  height: 280px;
+  background-color: var(--pc);
+  border-radius: 10px;
+  outline: 1px solid #fff;
+  outline-offset: -8px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  top: 70px;
+}
+
+div.card img.card-image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: transform .75s;
+}
+
+div.card:hover img.card-image{
+  transform: scale(1.15);
+}
+
+/* gallery page end */
