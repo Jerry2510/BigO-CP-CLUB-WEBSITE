@@ -19,6 +19,7 @@
     user-select: none;
     padding: 0px;
     margin: 0px;
+    font font-family:"poppins",sans-serif;
 }
 
 head {
@@ -121,4 +122,35 @@ div.coreteam div.image div.text {
     color: var(--ptc);
     font-size: 16px;
     padding: 16px 32px;
+}
+
+.bottom-three{
+    margin-bottom:1cm;
+}
+
+.contact{
+    position:relative;
+    min-height:100vh ;
+    padding: 50px 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+.contact .content{
+    max: width 800px;
+    text-align:center;
+}
+
+.contact .content h2{
+    font-size:36px;
+    font-weight:500;
+    color:rgb(255, 255, 255);
+}
+.contact .content p{
+    
+    font-weight:500;
+    color:rgb(0, 0, 0);
 }
