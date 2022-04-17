@@ -33,10 +33,9 @@ meta {
 body {
     min-height: 760px;
     font-family: Prompt, sans-serif;
-    overflow: hidden;
 }
 
-.navbar {
+.navbarCustom {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -49,24 +48,25 @@ body {
 
 nav {
     display: block;
-    overflow: hidden;
 }
 
-.navbar ul{
-    overflow: hidden;
-    
+.navbarCustom ul{
+
 }
 
-.navbar li
+.navbarCustom li
 {
     float: right;
     list-style: none;
     margin-right: 20px;
     padding: 15px 0px 0px 25px ;
-    
+
+}
+.allogo{
+    margin-right: 10px;
 }
 
-.navbar li a{
+.navbarCustom li a{
 
     text-decoration: none;
     color: var(--bgb);
@@ -124,6 +124,7 @@ div.coreteam div.image div.text {
     padding: 16px 32px;
 }
 
+<<<<<<< HEAD
 .bottom-three{
     margin-bottom:1cm;
 }
@@ -153,4 +154,23 @@ div.coreteam div.image div.text {
     
     font-weight:500;
     color:rgb(0, 0, 0);
+=======
+/* about all the members of BiGO */
+.organisers{
+    position: relative;
+    top: 200px;
+    left: 20px;
+    text-align: center;
+}
+
+
+/* bottom container */
+
+.myBottom{
+    position: relative;
+    text-align: center;
+    left: auto;
+    top: 300px;
+
+>>>>>>> 0d20e6cb561ce874cdd30fabfd180d5a70efebec
 }
