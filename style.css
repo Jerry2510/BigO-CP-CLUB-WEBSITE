@@ -124,7 +124,6 @@ div.coreteam div.image div.text {
     padding: 16px 32px;
 }
 
-<<<<<<< HEAD
 .bottom-three{
     margin-bottom:1cm;
 }
@@ -154,23 +153,4 @@ div.coreteam div.image div.text {
     
     font-weight:500;
     color:rgb(0, 0, 0);
-=======
-/* about all the members of BiGO */
-.organisers{
-    position: relative;
-    top: 200px;
-    left: 20px;
-    text-align: center;
-}
-
-
-/* bottom container */
-
-.myBottom{
-    position: relative;
-    text-align: center;
-    left: auto;
-    top: 300px;
-
->>>>>>> 0d20e6cb561ce874cdd30fabfd180d5a70efebec
 }
