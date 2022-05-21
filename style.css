@@ -388,3 +388,36 @@ div.info div.social_media a:hover img:hover{
   transform: scale(1.2);
 }
 /* contact page end*/
+/*gallery page start*/
+
+div.card{
+  width: 200px;
+  height:280px;
+  background-color: #e8e925;
+  border-radius: 10px;
+  outline: 1px solid #ffffff;
+  outline-offset: -8px;
+  box-shadow:var(--shadow_old);
+  position: relative;
+  overflow:hidden;
+  margin:20px;
+  top:70px;
+  
+}
+
+div.card img.card-image
+{
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.75s;
+   transition: transform .75s;
+  
+}
+
+div.card:hover img.card-image
+{
+  transform: scale(1.15);
+}
