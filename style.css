@@ -8,11 +8,27 @@
     --ptc:  #202124;
     --stc:  #4e5257;
     --ttc:  #bdc1c6;
+    --white: #fff;
     --shadow_old:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     --shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
     --tbshadow:  0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
     --trans:  width 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
+/* $bp : {
+  mobile: 480px;
+  tablet: 768px;
+  desktop: 1440px;
+}
+
+@mixin query($screen){
+  @each $key, $value in $bp{
+    @if($screen == $key){
+      @media(max-width: $value){
+        @content;
+      }
+    }
+  }
+} */
 
 * {
     box-sizing: border-box;
@@ -34,7 +50,7 @@ body {
     /* font-family: Prompt, sans-serif; */
     font-family: 'Montserrat', sans-serif;
     /* overflow-x: hidden; */
-    overflow: hidden;
+    overflow: scroll;
 }
 /* start loading */
 /* div.loader-wrapper{
@@ -132,12 +148,137 @@ nav.navbar li a:hover {
     text-decoration: none;
 }
 
+div.top-info{
+  display: flex;
+  flex-direction: row;
+  margin-top:60px;
+  resize: both;
+}
+
+/* @media (max-width: 1000px) {
+  .top-info{
+    flex-direction: column;
+  }
+}; */
+
 div.top-info div.top-left .headline{
   font-size: 70px;
   color: var(--pc);
   font-weight: bold;
   
 }
+
+/* home page team member list css start */
+.container-home {  
+  width: 100%;  
+  min-height: 100vh;  
+  display: flex;  
+  /* justify-content: center;   */
+  align-items: center;  
+  background: var(--white);  
+ }  
+ .list {  
+   /* display: flex; */
+  position: relative;  
+  /* width: 350px;   */
+  width: 50%;
+  min-height: 500px;  
+  padding: 50px; 
+  justify-content: center;
+  align-items: center;
+  background: var(--white);  
+  /* box-shadow: var(--shadow);  */
+  /* border-radius: 30px;   */
+ }  
+ .list h3 {  
+  /* color: #fff;   */
+  color: var(--pc);
+  font-size: 1.7rem;  
+  font-weight: 900;  
+  align-items: center;
+ }  
+ .list-item {  
+  height: max-content;
+  position: relative;  
+  display: flex;  
+  align-items: center;  
+  margin: 20px 0;  
+  cursor: pointer;  
+ }  
+ .list-item::before {  
+  content: '';  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  width: 45px;  
+  height: 45px;  
+  background: var(--pc);  
+  border-radius: 22.5px;  
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),  
+   inset 2px 2px 5px rgba(255, 255, 255, 0.5),  
+   inset -3px -3px 5px rgba(0, 0, 0, 0.5);  
+  /* box-shadow: var(--shadow); */
+  transition: 0.5s;  
+ }  
+ .list-item:hover::before {  
+  width: 100%;  
+ }  
+ .list-item .rank {  
+  position: relative;  
+  min-width: 45px;  
+  height: 45px;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  /* border-radius: 50%;   */
+  margin-right: 10px;  
+ }  
+ .list-item .rank::before {  
+  content: '';  
+  position: absolute;  
+  width: 30px;  
+  height: 30px;  
+  /* background: #2f363e;   */
+  background: var(--white);
+  border-radius: 30px;  
+  transform: scale(0);  
+  transition: 0.5s;  
+ }  
+ .list-item:hover .rank::before {  
+  transform: scale(1); 
+ }  
+ .list-item .rank span {  
+  position: relative;  
+  font-size: 1rem;  
+  font-weight: 600;  
+  color: var(--white);  
+  transition: 0.5s;  
+ }  
+
+ .list-item:hover .rank span{
+  color: var(--ptc);
+}
+
+ .list-item .name {  
+  position: relative;  
+  line-height: 1.15rem;  
+ }  
+ .list-item .name h4 {  
+  font-weight: 600;  
+  color: var(--ptc);  
+  transition: 0.5s;  
+ }  
+ .list-item .name p {  
+  font-size: 0.8rem;  
+  font-weight: 400;  
+  color: var(--stc);  
+  transition: 0.5s;  
+ }  
+ .list-item:hover .name h4,  
+ .list-item:hover .name p {  
+  color: #fff;  
+ }  
+/* home page team lit end  */
 
 div.coreteam {
     display: flex;
